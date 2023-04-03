@@ -1,0 +1,7 @@
+{
+  "provider": "aws",
+  "service": "cloudfront",
+  "resource_type": "{{ cookiecutter.service }}",
+  "policy_shortname": "enforce-https",
+  "policy_fullname": "{{ cookiecutter.provider }}-{{ cookiecutter.resource_type }}-{{ cookiecutter.policy_shortname }}"
+}
