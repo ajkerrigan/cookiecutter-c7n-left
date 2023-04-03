@@ -7,9 +7,13 @@ This cookiecutter generates the shell of a [c7n-left](https://github.com/cloud-c
 [Install Cookiecutter](https://cookiecutter.readthedocs.io/en/stable/installation.html) and run:
 
 ```console
-cookiecutter -fso policies <policy root directory>
+cookiecutter -fso <policy root directory> gh:ajkerrigan/cookiecutter-c7n-left
 ```
 
+**Note:** Why `-fso`?
+- `-f / --overwrite-if-exists`: lets us add to existing directories
+- `-s / --skip-if-file-exists`: ...but doesn't let us overwrite _files_
+- `-o / --output-dir`: tells the cookiecutter where to place policy-related files
 ## More Information
 
 This cookiecutter prompts for a few key fields:
